@@ -1,0 +1,143 @@
+.container {
+  width: 100%;
+  min-width: 400px;
+  margin: 0 auto;
+}
+
+.todoForm {
+  display: flex;
+  justify-content: center;
+  margin: -1.5rem 0 4rem;
+  gap: 0.5rem;
+  margin: 0 1rem;
+}
+
+.todoForm textarea {
+  background-color: var(--gray500);
+  color: var(--blue);
+  width: 100%;
+  max-width: 39.875rem;
+  height: 3.375rem;
+  border-radius: 8px;
+  padding: 1rem;
+  resize: none;
+  line-height: 1;
+}
+
+.todoForm button[type="submit"] {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 0;
+
+  padding: 1rem;
+  gap: 0.5rem;
+
+  border-radius: 8px;
+  color: var(--gray100);
+  font-size: 0.875rem;
+  font-weight: 700;
+  background-color: var(--blueDark);
+  transition: background-color 0.2s;
+}
+
+.todoForm button[type="submit"]:hover {
+  background-color: var(--blue);
+}
+
+header.taskContainer {
+  display: flex;
+  width: 17rem;
+  max-width: 46rem;
+  justify-content: space-between;
+  margin: 4rem auto 1.5rem;
+  text-align-last: center;
+  align-items: center;
+}
+
+.taskContainer .taskCreated,
+.taskDone {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.taskContainer .taskCreated p {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.taskDone p {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--purple);
+}
+
+.taskContainer span {
+  height: 1.188rem;
+  width: 1.563rem;
+  font-size: 0.75rem;
+  background-color: var(--gray400);
+  border-radius: 16px;
+  padding: 0.125rem 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.taskBox {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 46rem;
+  max-width: 46rem;
+  height: 15.25rem;
+  border-top: 1px solid var(--gray300);
+  border-radius: 8px;
+  margin: auto;
+}
+
+.taskBox .taskBoxContent {
+  flex-direction: collumn;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.taskBox .taskBoxContent img {
+  display: flex;
+  margin: 4rem auto 1rem;
+}
+
+.taskBox .taskBoxContent p {
+  width: 20.875rem;
+  max-width: 20.875rem;
+  margin: auto;
+  text-align: justify;
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  border-radius: 5px;
+  margin: 0 10px;
+  width: 40%;
+}
+
+.progress p {
+  font-size: 0.75rem;
+  color: #555;
+}
+
+.progress span {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #007bff;
+  width: 50%;
+  text-align: center;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0px;
+}
